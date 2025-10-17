@@ -19,12 +19,33 @@
 
 ###  Installation & Local Setup
 
-### 1. Clone the repository
+#### 1. Clone the repository
 ```bash
 git clone https://github.com/osigbemhe2020/HNG_Internship_backend.git
 cd HNG_Internship_backend
+```
 
-### 2. Install dependencies
+#### 2. Install dependencies
 ```bash
 npm install
-### 3. Set up environment variables
+```
+#### 3.Run the application
+```bash
+node stage0.js
+```
+### Dependencies
+express - Web framework for Node.js
+axios - HTTP client for making API requests
+
+### API Endpoints
+#### GET /me
+Returns profile information with a dynamic cat fact.
+##### Response:
+```json
+{"status":"success","user":{"email":"dirisupaul16@gmail.com","name":"Dirisu Paul","stack":"Node.js/Express.js, MongoDB, MySQL"},"timestamp":"2025-10-17T11:33:07.182Z","fact":"Researchers are unsure exactly how a cat purrs. Most veterinarians believe that a cat purrs by vibrating vocal folds deep in the throat. To do this, a muscle in the larynx opens and closes the air passage about 25 times per second."}
+```
+### Testing
+tested the end point with my browser
+```text
+http://localhost:3000/me
+```
