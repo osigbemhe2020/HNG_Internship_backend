@@ -42,10 +42,10 @@ or
 npm start
 ```
 ### Dependencies
-express - Web framework for Node.js
-axios - HTTP client for making API requests
-dotenv - Load environment variables from .env file
-express-rate-limit - For t rate limiting
+- express - Web framework for Node.js
+- axios - HTTP client for making API requests
+- dotenv - Load environment variables from .env file
+- express-rate-limit - For t rate limiting
 
 ### API Endpoints
 #### GET /me
