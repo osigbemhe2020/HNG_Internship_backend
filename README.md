@@ -42,7 +42,17 @@ axios - HTTP client for making API requests
 Returns profile information with a dynamic cat fact.
 ##### Response:
 ```json
-{"status":"success","user":{"email":"dirisupaul16@gmail.com","name":"Dirisu Paul","stack":"Node.js/Express.js, MongoDB, MySQL"},"timestamp":"2025-10-17T11:33:07.182Z","fact":"Researchers are unsure exactly how a cat purrs. Most veterinarians believe that a cat purrs by vibrating vocal folds deep in the throat. To do this, a muscle in the larynx opens and closes the air passage about 25 times per second."}
+{
+  "status": "success",
+  "user": {
+    "email": "dirisupaul16@gmail.com",
+    "name": "Dirisu Paul",
+    "stack": "Node.js/Express.js, MongoDB, MySQL"
+  },
+  "timestamp": "2025-10-17T11:33:07.182Z",
+  "fact": "Researchers are unsure exactly how a cat purrs. Most veterinarians believe that a cat purrs by vibrating vocal folds deep in the throat. To do this, a muscle in the larynx opens and closes the air passage about 25 times per second."
+}
+
 ```
 ### Testing
 tested the end point with my browser
