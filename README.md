@@ -29,13 +29,23 @@ cd HNG_Internship_backend
 ```bash
 npm install
 ```
-#### 3.Run the application
+#### 3. Set up environment variables
+Create a .env file in the root directory with the following variables:
+```.env
+CAT_FACT_API_URL=https://catfact.ninja/fact
+PORT=3000
+```
+#### 4.Run the application
 ```bash
-node stage0.js
+node stageZero.js
+or
+npm start
 ```
 ### Dependencies
 express - Web framework for Node.js
 axios - HTTP client for making API requests
+dotenv - Load environment variables from .env file
+express-rate-limit - For t rate limiting
 
 ### API Endpoints
 #### GET /me
