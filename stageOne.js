@@ -39,7 +39,7 @@ function analyzeStr(value) {
   };
 }
 
-// POST /string — create and store a new string
+// POST /strings — create and store a new string
 app.post('/strings', (req, res) => {
   const { value } = req.body;
 
@@ -66,7 +66,7 @@ app.post('/strings', (req, res) => {
   return res.status(201).json(record);
 });
 
-// GET /string/:value — fetch a specific string
+// GET /strings/:value — fetch a specific string
 app.get('/strings/:value', (req, res) => {
   const record = strlist.get(req.params.value);
   if (!record) {
