@@ -44,7 +44,7 @@ app.get('/me', async (req, res) => {
         fact: APIresponse.data.fact, 
       };
       res.setHeader('Content-Type', 'application/json');
-        return res.status(200).json(response);
+      return res.status(200).json(response);
     }
    catch (error) {
       console.error('Error fetching cat fact:', error.message);
