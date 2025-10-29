@@ -19,7 +19,13 @@ const EXCHANGE_API = "https://open.er-api.com/v6/latest/USD";
 (async () => {
   let connection;
   try {
+    console.log("Attempting database connection...");
+    console.log("Host:", process.env.mysqlHost);
+    console.log("Port:", process.env.mysqlPort);
+    console.log("User:", process.env.mysqlUser);
+    console.log("Database:", process.env.mysqlDatabase);
     connection = await mysql.createConnection(dbConfig);
+    
     const createTableQuery = `
       CREATE TABLE IF NOT EXISTS hng_stage_two_countries (
         id INT AUTO_INCREMENT PRIMARY KEY,
